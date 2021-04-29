@@ -13,6 +13,6 @@ def register(request):
         if form.is_valid():
             new_user = form.save()
             login(request, new_user)
-            return redirect("MainApp:index")
+            return redirect("pizza:index")
     context = {"form": form}
     return render(request, "registration/register.html", context)
