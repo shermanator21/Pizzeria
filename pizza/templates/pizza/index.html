@@ -1,0 +1,18 @@
+{% extends "pizza/base.html" %}
+
+
+{% block page_header %}
+<div class="jumbotron">
+    <h1 class="display-3">Hot Pizza Now!</h1>
+
+    <p class="lead">Select your pizza, then select some toppings.</p>
+
+    <a class="btn btn-lg btn-primary" href="{% url 'pizza:pizzas' %}" role="button">Pizzas &raquo;</a>
+</div>
+
+<p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a-ysU2S2_UdLppblegA_gHzy9JYjnehSZQ&usqp=CAU"
+        alt="Pizza">
+</p>
+
+{% endblock page_header %}
