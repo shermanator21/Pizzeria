@@ -5,9 +5,10 @@
 
 <p> Add a new pizza: </p>
 
-<form action="{% url 'pizza:new_pizza' %}" method='post'>
+<form action="{% url 'pizza:new_pizza' %}" method='post' enctype="multipart/form-data">
 
     {% csrf_token %}
+    {{ form.media }}
     {{ form.as_p }}
 
     <button name="submit">Add pizza</button>

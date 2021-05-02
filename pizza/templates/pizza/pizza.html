@@ -4,6 +4,11 @@
 {% block content%}
 <p>Pizza: {{ pizza.name }}</p>
 
+<!-- Image stuff -->
+{% if pizza.header_image %}
+<img src="{{ pizza.header_image.url }}" class="img-thumbnail" style="max-height: height 300px" alt="">
+{% endif %}
+
 <ul>
     {% for topping in toppings %}
 

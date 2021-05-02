@@ -1,13 +1,17 @@
 <p>
-    <a href="{% url 'pizza:index' %}">Pizzeria</a>
-    <a href="{% url 'pizza:pizzas' %}">Pizzas</a>
-    {% if user.is_authenticated %}
-    Hello, {{user.username}}.
-    <a href="{% url 'users:logout' %}">Log out</a>
-    {% else %}
-    <a href="{% url 'users:register' %}">Register</a>
-    <a href="{% url 'users:login' %}">Log in</a>
-    {% endif %}
+
+    <body style="background-color: rgb(250, 100, 10)" </body>
+
+        <font face="Optima" size="70px" color="246482"> Papa Joe's Pizza </font><br /><br />
+        <a href="{% url 'pizza:index' %}">Home Page</a>
+        <a href="{% url 'pizza:pizzas' %}">Pizzas</a>
+        {% if user.is_authenticated %}
+        Hello, {{user.username}}.
+        <a href="{% url 'users:logout' %}">Log out</a>
+        {% else %}
+        <a href="{% url 'users:register' %}">Register</a>
+        <a href="{% url 'users:login' %}">Log in</a>
+        {% endif %}
 </p>
 
 {% block content %}

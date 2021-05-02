@@ -9,6 +9,10 @@ class Pizza(models.Model):
 
     date = models.DateTimeField(auto_now_add=True)
 
+    # pizza images
+    header_image = models.ImageField(
+        null=True, blank=True, upload_to='images/')
+
     def __str__(self):
         return self.name
 
