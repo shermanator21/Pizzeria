@@ -1,18 +1,11 @@
 {% extends "pizza/base.html" %}
 
 
-{% block page_header %}
-<div class="jumbotron">
-    <h1 class="display-3">Pizza!</h1>
-
-    <p class="lead">Select your pizza, then select some toppings.</p>
-
-    <a class="btn btn-lg btn-primary" href="{% url 'pizza:pizzas' %}" role="button">Pizzas &raquo;</a>
-</div>
+{% block content %}
 
 <p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a-ysU2S2_UdLppblegA_gHzy9JYjnehSZQ&usqp=CAU"
-        alt="Pizza">
+    <font face="Optima" size="5px" color="24689"> Welcome! Select your pizza to see a picture as well as toppings. Leave
+        a comment once you've tried it! </font>
 </p>
 
-{% endblock page_header %}
+{% endblock content %}

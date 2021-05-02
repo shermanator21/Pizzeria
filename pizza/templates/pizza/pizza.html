@@ -16,9 +16,11 @@
 
         <p>{{ topping.name|linebreaks }}</p>
 
+        <!---
         <p>
             <a href="{% url 'pizza:edit_topping' topping.id %}">Edit topping</a>
         </p>
+         -->
 
     </li>
     {% empty %}
@@ -27,8 +29,14 @@
 
 </ul>
 
+<!--
 <p>
     <a href="{% url 'pizza:new_topping' pizza.id %}">Add a new topping</a>
+</p>
+-->
+
+<p>
+    Comments:
 </p>
 
 <ul>
