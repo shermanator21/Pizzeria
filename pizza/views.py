@@ -46,7 +46,7 @@ def new_pizza(request):
 
             new_pizza.save()
 
-            return redirect('pizza:pizza')
+            return redirect('pizza:pizzas')
 
     context = {'form': form}
     return render(request, 'pizza/new_pizza.html', context)
