@@ -13,7 +13,7 @@ def index(request):
 
 @login_required
 def pizzas(request):
-    pizzas = Pizza.objects.order_by('date')
+    pi = Pizza.objects.order_by('date')
 
     context = {'pizzas': pizzas}
 
